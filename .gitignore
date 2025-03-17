@@ -1,0 +1,16 @@
+/target/
+**/*.rs.bk
+Cargo.lock
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+*.pdb
+/doc/
+/target/doc/
+.cargo-ok
+*.cpg
+*.json
+!examples/*.json

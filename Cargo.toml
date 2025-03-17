@@ -1,0 +1,43 @@
+[package]
+name = "cpg-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust library for working with Code Property Graphs (CPG)"
+authors = ["Gianluca Brigandi <gbrigand@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/gbrigandi/cpg-rs"
+readme = "README.md"
+keywords = ["cpg", "code-property-graph", "static-analysis"]
+categories = ["development-tools", "parsing"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[lib]
+name = "cpg_rs"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+strip = "symbols"
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = "unwind"
+incremental = false
+codegen-units = 1
+rpath = false
+
+[[example]]
+name = "modify_cpg"
+path = "examples/modify_cpg.rs"
+
+[[example]]
+name = "find_methods"
+path = "examples/find_methods.rs"
+
+[[example]]
+name = "diff_graph"
+path = "examples/diff_graph.rs"
