@@ -17,9 +17,8 @@ By merging these representations, CPGs enable more sophisticated code analysis t
 
 Several open-source projects implement the CPG concept:
 
-- [Joern](https://github.com/joernio/joern): The original implementation by the authors of the CPG paper
-- [ShiftLeft CORE](https://github.com/ShiftLeftSecurity/codepropertygraph): A CPG implementation focused on static analysis
-- [cpg4j](https://github.com/monoid-privacy/cpg4j): A Java implementation of Code Property Graphs
+- [codepropertygraph](https://github.com/ShiftLeftSecurity/codepropertygraph): The original implementation by the authors of the CPG paper.
+- [Joern](https://github.com/joernio/joern): Code analysis platform for various languages, based on codepropertygraph. 
 
 This library, cpg-rs, provides a Rust implementation with serialization/deserialization support.
 
